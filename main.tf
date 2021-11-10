@@ -16,7 +16,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = var.instance_ami
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = var.instance_tags
 }
